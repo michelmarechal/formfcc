@@ -1,13 +1,14 @@
 :root {
-  --background-blue: #192a56;
-  --background-main: #dcdde1;
+  --main-blue: #192a56;
+  --main-white: #dcdde1;
 }
 body {
   margin: 0 auto;
-  background-color: var(--background-blue);
+  background-color: var(--main-blue);
   color: white;
   font-family: Open Sans, Arial;
   font-size: 14px;
+  min-width: 400px;
 }
 
 h1 {
@@ -16,11 +17,47 @@ h1 {
 }
 
 #wrap {
-  background: var(--background-main);
+  background: var(--main-white);
+  color: var(--main-blue);
   min-height: 300px;
   height: 100%;
   width: 70%;
   margin: 0 auto;
-  display: flex;
   border-radius: 15px;
+  text-align: center;
+}
+
+h2 {
+  width: 100%;
+  font-size: 200%;
+}
+
+.main-col {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+.left-col {
+  text-align: right;
+  order: 0;
+  width: 50%;
+  height: 20vh;
+}
+
+.right-col {
+  text-align: left;
+  order: 1;
+  width: 50%;
+  height: 20vh;
+}
+
+@media(max-width: 600px) {
+  .main-col {
+    flex-direction: column;
+  }
+  .left-col, .right-col {
+    width: 100%;
+  }
 }
