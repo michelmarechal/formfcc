@@ -1,0 +1,26 @@
+:root {
+  --background-blue: #192a56;
+  --background-main: #dcdde1;
+}
+body {
+  margin: 0 auto;
+  background-color: var(--background-blue);
+  color: white;
+  font-family: Open Sans, Arial;
+  font-size: 14px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 350%;
+}
+
+#wrap {
+  background: var(--background-main);
+  min-height: 300px;
+  height: 100%;
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  border-radius: 15px;
+}
