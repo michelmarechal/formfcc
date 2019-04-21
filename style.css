@@ -30,6 +30,7 @@ h1 {
 h2 {
   width: 100%;
   font-size: 200%;
+  padding-top: 30px;
 }
 
 .main-col {
@@ -53,7 +54,7 @@ p {
 }
 .right-col {
   width: 50%;
-  height: 50px;
+  height: 100%;
   display: flex;
   align-items: center;
   text-align: left;
@@ -61,14 +62,26 @@ p {
   flex-wrap: wrap;
 }
 
-input, select {
+.input-form {
   width: 80%;
   height: 50%;
   font-size: 100%;
 }
 select {
   width: 40%;
-  height: 60%;
+  height: 60% !important;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  display: inline;
+  padding: 0;;
+}
+
+li {
+  margin: 0;
+  text-align: left;
 }
 
 @media (max-width: 600px) {
