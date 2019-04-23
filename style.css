@@ -5,35 +5,141 @@
 body {
   margin: 0 auto;
   background-color: var(--main-blue);
-  color: white;
+  color: var(--main-blue);
   font-family: Open Sans, Arial;
   font-size: 14px;
-  min-width: 400px;
+  min-width: 550px;
+  height: 100%;
 }
-.wrap {
+#main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+  min-width: 550px;
   display: flex;
   flex-direction: row;
   align-items: center;
   vertical-align: center;
+  flex-wrap: wrap;
+}
+form {
+    -webkit-appearance: none;
 }
 .div-left {
   width: 50%;
-  height: 100vh;
+  height: 100%;
   order: 0;
+  display: block;
+  margin-bottom: 800px;
 }
 .div-right {
   width: 50%;
-  height: 100vh;
+  height: 100%;
   background: white;
   order: 1;
-
 }
-h1 {
-  font-size: 1000%;
+.content-right {
+  height: 80%;
+  width: 100%;
+}
+.form-inside, form {
+  width: 100%;
+}
+#title {
+  font-size: 800%;
   font-family: 'Open Sans', Arial;
   margin-right: 80px;
   color: white;
+  height: 20vh;
   text-align: right;
+}
+h2 {
+  text-align: center;
+  font-size: 300%;
+  color: var(--main-blue);
+}
+p {
+  color: var(--main-blue);
+  margin-left: 80px;
+  font-size: 150%;
+}
+
+.personal, .dropdown {
+  margin-left: 80px;
+  font-size: 100%;
+  width: 180px;
+}
+
+#dropdown {
+  margin-left: 80px;
+  font-size: 100%;
+}
+
+hr {
+  width: 60%;
+  opacity: 0.1;
+  margin-top: 40px;
+  border: 1.3px solid black;
+}
+
+ul {
+  list-style: none;
+  font-size: 150%;
+  text-align: left;
+}
+
+.sauces {
+  margin-left: 40px;
+  margin-right: 20px;
+  transform: scale(1.2);
+}
+
+.radio {
+  margin-left: 40px;
+}
+.text-goes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  vertical-align: center;
+  flex-wrap: wrap;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  font-size: 130%;
+  margin: 0 40px 0 40px;
+}
+
+button {
+  text-align: center;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--main-blue);
+  color: white;
+  font-size: 120%;
+  width: 150px;
+  margin: 40px auto 40px 40%;
+}
+
+@media (max-width: 960px) {
+  .div-left {
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+  }
+  #title {
+    font-size: 400%;
+    margin: 40px auto 0 auto;
+    text-align: center;
+  }
+  .div-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  #title {
+    font-size: 300%;
+  }
 }

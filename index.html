@@ -1,18 +1,91 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>FCC Survey Form using Flexbox</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <main id="main" class="wrap">
-      <div class="div-left">
-        <h1>FCC Survey Form</h1>
-      </div>
-      <div class="div-right">
-
-      </div>
-    </main>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <title>FCC Survey Form using Flexbox</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="main" class="wrap">
+            <div class="div-left">
+                <h1 id="title">Your prefered pasta survey</h1>
+            </div>
+            <form class="div-right" id="survey-form" method="GET" action="#">
+                <p>Please, tell us about youself</p>
+                <div class="content-right">
+                <div class="form-inside">
+                    <label id="name-label"><p>Name:</p></label><input id="name" class="personal" type="text" name="name" value="" placeholder="John Doe" required>
+                    <label id="email-label"><p>Email:</p></label><input id="email" class="personal" type="email" name="email" value="" placeholder="johndoe@internet.com" required>
+                    <label id="number-label"><p>Age:</p></label><input id="number" class="personal" type="number" name="age" value="" placeholder="30" required min="10" max="99">
+                    <hr>
+                </div>
+                <div class="form-inside">
+                    <p>Select your prefered type of pasta:</p>
+                    <select id="dropdown" name="pasta">
+                        <option disabled="" value="">Select a type</option>
+                        <option value="spaghetti">Spaghetti</option>
+                        <option value="fusilli">Fusilli</option>
+                        <option value="fettuccine">Fettuccine</option>
+                        <option value="penne">Penne</option>
+                        <option value="farfalle">Farfalle</option>
+                    </select>
+                    <hr>
+                </div>
+                <div class="form-inside">
+                    <p>Plase, mark a few sauces you like</p>
+                    <ul>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="pomodoro">Pomodoro
+                        </li>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="marinara">Marinara
+                        </li>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="carbonara">Carbonara
+                        </li>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="alfredo">Alfredo
+                        </li>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="marsala">Marsala
+                        </li>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="bolognese">Bolognese
+                        </li>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="puttanesca">Puttanesca
+                        </li>
+                        <li>
+                            <input class="sauces" type="checkbox" name="" value="pesto">Pesto
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                <div class="form-inside">
+                    <p>And what about the cooking time?</p>
+                    <ul>
+                        <li>
+                            <label>
+                                <input class="radio" type="radio" name="cooking" value="1"> Al Dente
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                <input class="radio" type="radio" name="cooking" value="2"> Soft
+                            </label>
+                        </li>
+                    </ul>
+                    <hr>
+                </div>
+                </div>
+                <div class="form-inside">
+                <p>Is there anything else you would like to tell us?</p>
+                <div class="text-goes">
+                    <textarea name="name" placeholder="Your comments goes here!"></textarea>
+                </div>
+                <button id="submit" type="submit" name="button">Submit</button>
+                </div>
+            </form>
+        </main>
+    </body>
 </html>
